@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-a{
-    color:white;
+a {
+    color: white;
     text-decoration: none;
-}
-
-button{
-    background-color: #5294e2;
-    border:none;
-    border-radius:50px;
     transition: all 0.3s ease 0s;
 }
 
-button:hover{
+a:hover {
     color: #5294e2;
+}
+
+button {
+    background-color: #5294e2;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: #5294e2;
+}
+
+.typed-cursor {
+    color: #7c818c;
+    font-size: 2rem;
 }
