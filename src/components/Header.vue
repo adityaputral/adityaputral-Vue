@@ -1,9 +1,30 @@
 <template>
   <header>
+    <div id="hamburger-menu">
+      <Bubble width="400">
+        <a id="home" href="#">
+          <span>Home</span>
+        </a>
+
+        <a id="home" href="#">
+          <span>About</span>
+        </a>
+
+        <a id="home" href="#">
+          <span>Portfolio</span>
+        </a>
+
+        <a id="home" href="#">
+          <span>Contact</span>
+        </a>
+      </Bubble>
+    </div>
+
     <a href="/">
       <img src="@/assets/img/logo.png" alt class="logo" />
     </a>
-    <nav>
+
+    <nav class="main-menu">
       <ul class="nav-links">
         <li>
           <a href="/">Home</a>
@@ -23,18 +44,24 @@
       </ul>
     </nav>
 
-    <div>
+    <div class="social-menu">
       <ul class="nav-links">
         <li>
-          <a href="https://www.instagram.com/adityaputral/" target="_blank"> <i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/adityaputral/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/in/aditya-putra-leksono/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/aditya-putra-leksono/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </li>
 
         <li>
-          <a href="mailto:adityaputra.official@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+          <a href="mailto:adityaputra.official@gmail.com" target="_blank">
+            <i class="far fa-envelope"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -42,9 +69,14 @@
 </template>
 
 <script>
+import { Bubble } from "vue-burger-menu";
+
 export default {
-  name: 'Header'
-}
+  name: "Header",
+  components: {
+    Bubble
+  }
+};
 </script>
 
 <style>
@@ -73,5 +105,27 @@ header {
 
 .nav-links li a:hover {
   color: #5294e2;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .bm-burger-bars {
+    background-color: white;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .social-menu {
+    display: none;
+  }
 }
 </style>

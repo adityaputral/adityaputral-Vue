@@ -14,7 +14,8 @@
 
     <div class="discover">
       <a href>
-        Discover<i class="fas fa-chevron-down"></i>
+        Discover
+        <i class="fas fa-chevron-down"></i>
       </a>
     </div>
   </div>
@@ -47,7 +48,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(to bottom, #383c4a, #484d5a);
-  height: 100vh;
+  height: 90vh;
   top: 0;
 }
 
@@ -74,7 +75,7 @@ export default {
   font-size: 30px;
 }
 
-.discover i{
+.discover i {
   /* transform: rotate(90deg); */
   animation: discover 1s ease infinite alternate;
 }
