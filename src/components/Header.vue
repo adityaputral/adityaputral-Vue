@@ -1,7 +1,7 @@
 <template>
   <header>
     <div id="hamburger-menu">
-      <Bubble width="400">
+      <Bubble>
         <a id="home" href="#">
           <span>Home</span>
         </a>

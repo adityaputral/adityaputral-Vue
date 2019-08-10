@@ -7,8 +7,8 @@
         <span id="typed-element"></span>
       </div>
 
-      <div class="profile-pict">
-        <img src="http://via.placeholder.com/230x271" alt />
+      <div class="profile-image">
+        <img src="http://via.placeholder.com/230x271" alt="Profile Picture" class="profile-pict"/>
       </div>
     </div>
 
@@ -63,6 +63,11 @@ export default {
   font-size: 2rem;
 }
 
+.typed-cursor {
+  color: #7c818c;
+  font-size: 2rem;
+}
+
 .discover {
   position: absolute;
   right: 5%;
@@ -72,7 +77,7 @@ export default {
 .discover a {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-size: 30px;
+  font-size: 19px;
 }
 
 .discover i {
@@ -86,6 +91,46 @@ export default {
   }
   to {
     transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero #title{
+    text-align: center;
+    order: 2;
+  }
+
+  .hero .name {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .hero .profile-image{
+    order:1;
+  }
+
+  #typed-element {
+    color: #5294e2;
+    font-size: 2rem;
+  }
+
+  .typed-cursor {
+    color: #7c818c;
+    font-size: 2rem;
+  }
+
+  .profile-pict{
+    height:180px;
+  }
+
+  .discover{
+    display:none;
   }
 }
 </style>
