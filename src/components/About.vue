@@ -10,7 +10,7 @@
       </div>
 
       <div class="about-desc">
-        <h3 style="font-weight: bold;">I'm Aditya Putra Leksono</h3>
+        <h3 style="font-weight: bold; text-transform:uppercase">I'm Aditya Putra Leksono</h3>
         <br />
         <p style="line-height: 1.6">
           Hi! My name is Aditya Putra. I am a graphic designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional graphic designer, I have acquired the skills and knowledge necessary to make your project a success.
@@ -57,5 +57,16 @@ export default {
 .about-detail .about-desc p {
   flex: 1 60%;
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+    .about-detail .about-img{
+       text-align: center;
+       margin-bottom: 40px;
+    }
+
+    .about-detail .about-desc{
+       text-align: center;
+    }
 }
 </style>

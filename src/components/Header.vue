@@ -27,7 +27,7 @@
     <nav class="main-menu">
       <ul class="nav-links">
         <li>
-          <a href="/"  v-scroll-to="'#home'">Home</a>
+          <a href="/" v-scroll-to="'#home'">Home</a>
         </li>
 
         <li>
@@ -87,7 +87,7 @@ header {
   background-color: #383c4a;
   padding: 30px 10%;
   position: fixed;
-  width:100%;
+  width: 100%;
   z-index: 999;
 }
 
@@ -115,6 +115,10 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+
   #hamburger-menu {
     display: inline-block;
   }

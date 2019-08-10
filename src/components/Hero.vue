@@ -9,7 +9,7 @@
       </div>
 
       <div class="profile-image">
-        <img src="http://via.placeholder.com/230x271" alt="Profile Picture" class="profile-pict"/>
+        <img src="http://via.placeholder.com/230x271" alt="Profile Picture" class="profile-pict" />
       </div>
     </div>
 
@@ -102,7 +102,7 @@ export default {
     justify-content: center;
   }
 
-  .hero #title{
+  .hero #title {
     text-align: center;
     order: 2;
   }
@@ -112,8 +112,8 @@ export default {
     font-size: 2rem;
   }
 
-  .hero .profile-image{
-    order:1;
+  .hero .profile-image {
+    order: 1;
   }
 
   #typed-element {
@@ -126,12 +126,21 @@ export default {
     font-size: 2rem;
   }
 
-  .profile-pict{
-    height:180px;
+  .profile-pict {
+    height: 180px;
   }
 
-  .discover{
-    display:none;
+  .discover {
+    position: absolute;
+    right: 48%;
+    bottom: 3%;
+  }
+
+  .discover a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 10px;
+    color:white;
   }
 }
 </style>
