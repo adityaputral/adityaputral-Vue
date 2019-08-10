@@ -9,8 +9,8 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color:white;
+h1, h2, h3, h4, h5, h6 {
+    color: white;
 }
 
 a {
@@ -25,16 +25,34 @@ a:hover {
 
 button {
     background-color: #5294e2;
+    color:white;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
+    padding: 10px 20px;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 button:hover {
+    background-color: white;
     color: #5294e2;
+    cursor: pointer;
 }
 
-.title span{
+input, textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #5294e2;
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.title span {
     background-image: linear-gradient(to top, #5294e2 40%, transparent 0px);
 }
-

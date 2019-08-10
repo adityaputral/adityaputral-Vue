@@ -68,5 +68,9 @@ export default {
     .about-detail .about-desc{
        text-align: center;
     }
+
+    .about{
+      padding:30% 30px;
+    }
 }
 </style>
