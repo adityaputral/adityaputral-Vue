@@ -14,7 +14,7 @@
     </div>
 
     <div class="discover">
-      <a href>
+      <a href="#" v-scroll-to="'#about'">
         Discover
         <i class="fas fa-chevron-down"></i>
       </a>
@@ -49,7 +49,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(to bottom, #383c4a, #585c68);
-  height: 90vh;
+  height: 100vh;
   top: 0;
 }
 

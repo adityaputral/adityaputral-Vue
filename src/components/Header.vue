@@ -2,19 +2,19 @@
   <header>
     <div id="hamburger-menu">
       <Bubble>
-        <a id="home" href="#">
+        <a href="#" v-scroll-to="'#home'">
           <span>Home</span>
         </a>
 
-        <a id="home" href="#">
+        <a href="#" v-scroll-to="'#about'">
           <span>About</span>
         </a>
 
-        <a id="home" href="#">
+        <a href="#" v-scroll-to="'#portfolio'">
           <span>Portfolio</span>
         </a>
 
-        <a id="home" href="#">
+        <a href="#" v-scroll-to="'#contact'">
           <span>Contact</span>
         </a>
       </Bubble>
@@ -27,19 +27,19 @@
     <nav class="main-menu">
       <ul class="nav-links">
         <li>
-          <a href="/">Home</a>
+          <a href="/"  v-scroll-to="'#home'">Home</a>
         </li>
 
         <li>
-          <a href>About</a>
+          <a href="#" v-scroll-to="'#about'">About</a>
         </li>
 
         <li>
-          <a href>Portfolio</a>
+          <a href="#" v-scroll-to="'#portfolio'">Portfolio</a>
         </li>
 
         <li>
-          <a href>Contact</a>
+          <a href="#" v-scroll-to="'#contact'">Contact</a>
         </li>
       </ul>
     </nav>
@@ -86,6 +86,9 @@ header {
   align-items: center;
   background-color: #383c4a;
   padding: 30px 10%;
+  position: fixed;
+  width:100%;
+  z-index: 999;
 }
 
 .nav-links {

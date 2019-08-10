@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Hero></Hero>
-    <About></About>
+    <Hero id="home"></Hero>
+    <About id="about"></About>
   </div>
 </template>
 
