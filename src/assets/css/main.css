@@ -9,6 +9,10 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color:white;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -28,5 +32,9 @@ button {
 
 button:hover {
     color: #5294e2;
+}
+
+.title span{
+    background-image: linear-gradient(to top, #5294e2 40%, transparent 0px);
 }
 

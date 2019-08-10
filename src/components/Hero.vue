@@ -2,8 +2,9 @@
   <div>
     <div class="hero">
       <div id="title">
-        <span class="name">I'm {{name}}</span>
-        <br />
+        <h1>
+          <span class="name">I'm {{name}}</span>
+        </h1>
         <span id="typed-element"></span>
       </div>
 
@@ -47,7 +48,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to bottom, #383c4a, #484d5a);
+  background: linear-gradient(to bottom, #383c4a, #585c68);
   height: 90vh;
   top: 0;
 }

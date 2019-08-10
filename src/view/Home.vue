@@ -1,16 +1,21 @@
 <template>
-  <Hero></Hero>
+  <div>
+    <Hero></Hero>
+    <About></About>
+  </div>
 </template>
 
 <script>
-import Hero from '@/components/Hero'
+import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Hero
+    Hero,
+    About
   }
-}
+};
 </script>
 
 <style>
